@@ -8,7 +8,18 @@ NotDolls.config(['$routeProvider',
 	.when('/', {
 		templateUrl: 'partials/main.html',
 		controller: 'MainController'
+	})
+	.when('/create', {
+		templateUrl: 'partials/newFigurine.html',
+		controller: 'NewFigurineController'
 
 	})
-		.otherwise('/');
+	.when('/create', {
+		templateUrl: 'partials/register.html',
+		controller: 'RegisterController'
+
+	})
+	.otherwise({
+		redirectTo: '/'
+	});
 }]);

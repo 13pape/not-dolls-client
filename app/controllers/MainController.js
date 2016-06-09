@@ -4,7 +4,7 @@ NotDolls.controller('MainController', [
 	'$http', 
 	'$scope',
 
-	function  ($http, $scoper) {
+	function  ($http, $scope) {
 		$scope.figurines = [];
 
 		$http
